@@ -1,5 +1,9 @@
 #/bin/bash
 
+gradle build -x test
+
+gradle BootJar
+
 docker run --name mysql-standalone4 -e MYSQL_ROOT_PASSWORD=1111 -e MYSQL_DATABASE=noSkype -e MYSQL_USER=root -e MYSQL_PASSWORD=1111 -d mysql:5.6
 
 docker build . -t spring-rest-service-0.1.0
