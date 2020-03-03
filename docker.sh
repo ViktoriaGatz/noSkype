@@ -1,5 +1,12 @@
 #/bin/bash
 
+# Полная установка
+# docker pull ubuntu
+# docker pull openjdk
+# docker pull gradle
+# docker pull mysql:5.6
+
+
 gradle build -x test
 
 gradle BootJar
